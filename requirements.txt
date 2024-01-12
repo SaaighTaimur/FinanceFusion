@@ -5,3 +5,4 @@ streamlit_option_menu>=0.3.6
 deta>=1.2.0
 python-dotenv
 yfinance>=0.2.30
+streamlit_option_menu>=0.3.6
