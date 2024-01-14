@@ -22,6 +22,12 @@ st.set_page_config(page_title = page_title, page_icon = page_icon, layout = layo
 # Use st.title to create a title
 st.title(page_title + " " + page_icon)
 
+def local_css(file_name):
+    with open(file_name) as css:
+        st.markdown("<style>{}</style>".format(css.read()), unsafe_allow_html=True)
+
+local_css("styles/main.css")
+
 # Define a function to load the Lottie file (basically a gif)
 def load_lottie(filepath: str):
     with open(filepath, "r") as f:
