@@ -40,7 +40,7 @@ with col1:
     link = "https://ca.finance.yahoo.com/"
 
     # Link the Yahoo Finance website for users trying to find stock tickers
-    st.write(f"Having trouble? You can find stock tickers on this [website]({link}).")
+    st.write(f"Having trouble? You can find stock tickers on this **[website]({link}).**")
     
     st.write("---")
 
