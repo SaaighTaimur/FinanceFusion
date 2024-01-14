@@ -42,7 +42,7 @@ col1, col2 = st.columns(2, gap="small")
 with col1: 
     st.subheader("\n**Thank you for using this app!**")
     st.write("-⭐ Rate the app out of 5!")
-    st.write("-📢 Send any feedback regarding glitches or issues you may be facing to **saaightaimur2@gmail.com**")
+    st.write("-📢 Send any feedback regarding glitches or issues you may be facing to **financefusion.ca@gmail.com**")
 
 # In the second column, place the lottie
 with col2:
