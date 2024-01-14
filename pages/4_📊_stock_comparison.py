@@ -10,7 +10,6 @@ import yfinance as yf
 import plotly.express as px
 
 # Import necessary modules for file navigation + lotties
-from pathlib import Path
 import json
 
 # Import datetime for date configuration
