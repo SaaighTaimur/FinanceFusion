@@ -5,7 +5,6 @@ from datetime import datetime
 
 from streamlit_lottie import st_lottie
 import json
-import requests
 from streamlit_option_menu import option_menu
 
 PAGE_TITLE = "Stock Tracker"
@@ -21,7 +20,11 @@ def load_lottie(filepath: str):
 
 stocks_lottie = load_lottie("lotties/stocks.json")
 
+def local_css(file_name):
+    with open(file_name) as css:
+        st.markdown("<style>{}</style>".format(css.read()), unsafe_allow_html=True)
 
+local_css("styles/main.css")
 
 st.title("Stock Tracker")
 
