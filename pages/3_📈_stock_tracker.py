@@ -41,6 +41,8 @@ with col1:
 
     # Link the Yahoo Finance website for users trying to find stock tickers
     st.write(f"Having trouble? You can find stock tickers on this **[website]({link}).**")
+
+    st.write(f"NOTE: There may be an increased delay on your first request. It can take around 15 seconds to retrieve the information.")
     
     st.write("---")
 
