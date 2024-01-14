@@ -36,8 +36,12 @@ with col1:
 
     st.write("###")
 
-    st.write("Having trouble? You can find stock tickers on this website")
+    # Store the link to Yahoo Finance in a variable
+    link = "https://ca.finance.yahoo.com/"
 
+    # Link the Yahoo Finance website for users trying to find stock tickers
+    st.write(f"Having trouble? You can find stock tickers on this [website]({link}).")
+    
     st.write("---")
 
 with col2:
