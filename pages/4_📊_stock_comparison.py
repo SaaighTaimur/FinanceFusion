@@ -57,6 +57,8 @@ with col2:
     money_lottie,
 )
 
+st.write(f"NOTE: There may be an increased delay on your first request. It can take around 15 seconds to retrieve the information.")
+
 # Use option_menu() to create two different sections in the webapp
 selected = option_menu(
     # Leave the title blank (must include it, though, because it is mandatory)
