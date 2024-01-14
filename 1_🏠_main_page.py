@@ -15,7 +15,11 @@ def load_lottie(filepath: str):
     
 working_lottie = load_lottie("lotties/working.json")
 
+def local_css(file_name):
+    with open(file_name) as css:
+        st.markdown("<style>{}</style>".format(css.read()), unsafe_allow_html=True)
 
+local_css("styles/main.css")
 
 # Header
 st.image("banner_with_slogan.png")
