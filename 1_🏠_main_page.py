@@ -1,3 +1,4 @@
+# Import all the necessary modules
 import streamlit as st
 import json
 from streamlit_lottie import st_lottie
@@ -8,17 +9,20 @@ st.set_page_config(
     page_icon="💸"
 )
 
-# Load Lottie file
+# Create a function to load the Lottie file
 def load_lottie(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
-    
+        
+# Call the function    
 working_lottie = load_lottie("lotties/working.json")
 
+# Create a function to load the CSS
 def local_css(file_name):
     with open(file_name) as css:
         st.markdown("<style>{}</style>".format(css.read()), unsafe_allow_html=True)
 
+# Load the CSS by inputting the path of the file
 local_css("styles/main.css")
 
 # Header
@@ -36,7 +40,7 @@ We appreciate your feedback! Please use the 📢 feedback form available to shar
 """)
 
 
-# Show lottie
+# Show the lottie and set its configurations
 st_lottie(
     working_lottie,
     speed=1,
