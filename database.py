@@ -31,9 +31,9 @@ def fetch_periods_by_username(username):
         else:
             return []  # If no periods found, return an empty list
     except Exception as e:
-        # Handle exceptions, such as connection errors or malformed responses
         st.error(f"Error fetching periods: {e}")
-        return []  # Return an empty list in case of an error
+        # Return an empty list in case of an error
+        return []  
     
 # Return all rows
 def fetch_all_periods():
